@@ -6,8 +6,20 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-
-
+	<script type="text/javascript">
+		function loadpage(link){
+			window.location.href=link;
+		}
+	</script>
+	<style type="text/css">
+	.ui-title {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	ul {
+		list-style-type: none;
+	}
+	</style>
 </head>
 
 <body bgcolor="#3399FF">
@@ -15,7 +27,7 @@
 <div data-role="page">
 	<div data-role="header">
 
-		<h1 style="font-size: 300%; text-align: center;"> Settings </h1>
+		<h1 style="text-align: center;"> Settings </h1>
 		<br>
 		<br>
 	</div>
@@ -24,10 +36,23 @@
 		    .js linked outside, script link on each page -->
 		<center><ul>
 			<li> Require password for each change
+				<br>
+					<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
+						<option value="off">Off</option>
+						<option value="on">On</option>
+					</select> </li>
+			<li> Send notification of new device 
+				<br>
+					<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
+						<option value="off">Off</option>
+						<option value="on">On</option>
+					</select> </li>
 			</ul>
 		</center>
 	</div>
 	<div data-role="footer">
+		<center><button onclick="loadpage('wefenetworks1.html')"> Back </button></center>
+</script>
 	</div>
 </body>
 </html>

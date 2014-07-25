@@ -10,51 +10,26 @@
 	<!-- navigation-like buttons for the list -->
 
 <script type="text/javascript">
-		function newPopupwindow(url){
-			var popupWindow = window.open(url,'popUpWindow','height=700,width=800, left=10,top=10,resizable=yes,scrollbars=yes, toolbar=yes,menubar=no,location=no, directories-no, status-yes');	
-			return popupWindow;
+		function settingspage(link){
+			window.location.href=link;
 		}
 </script>
-<!-- <style>
-#bodysection ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-#bodysection a:link, a:visited {
-    display: block;
-    width: 190px;
-    font-weight: bold;
-    color: black;
-    background-color: #3399FF;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#bodysection a:hover, a:active {
-    background-color: #28597a;
-}
-
-#headersection a:link, a:visited {
-	color:black;
-}
-
-</style> -->	
+<style type="text/css">
+	.ui-title {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+</style>
 </head>
 <body bgcolor="#3399FF">
 
 <div data-role="page">
-
-	<div data-role="header" id="headersection" data-position="fixed">
-	
-		<h1> My Networks and Hotspots </h1>
-		<br>
-	</div>
 	<div role="main" class="ui-content" id="bodysection">
+
+	<div data-role="header" id="headersection" class="ui-title">
+		<h1> My Networks and Hotspots </h1>
+	</div>
 		<!-- usually should be a javascript code that generates the list based on the add
 			network form -->
 		<center>
@@ -78,7 +53,7 @@
 			        </ul>
 			    </div>
 			    <div data-role="collapsible">
-			        <h3>Network 1</h3>
+			        <h3>Network 2</h3>
 			        <ul data-role="listview" data-inset="false">
 			            <li>Device 1</li>
 			            <li>Device 2</li>
@@ -90,7 +65,9 @@
 		</center>
 	</div>
 	<div data-role="footer">
-		<p color="black"><center><a href="JavaScript: newPopupwindow('wefesettings.html');">Settings > </a></p></center>
+			<center>
+				<button onclick="settingspage('wefesettings.html')"> Settings </button>
+			</center>
 	</div>
 </body>
 </html>
