@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> WE-FE: My Networks & Hotspots </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+
+	<!-- navigation-like buttons for the list -->
+
+<script type="text/javascript">
+		function newPopupwindow(url) {
+			popupWindow = window.open(url,'popUpWindow','height=700,width=800, left=10,top=10,resizable=yes,scrollbars=yes, 
+			toolbar=yes,menubar=no,location=no, directories-no, status-yes')	}
+</script>
+<style>
+#bodysection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bodysection a:link, a:visited {
+    display: block;
+    width: 190px;
+    font-weight: bold;
+    color: black;
+    background-color: #3399FF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#bodysection a:hover, a:active {
+    background-color: #28597a;
+}
+
+#headersection a:link, a:visited {
+	color:black;
+}
+
+</style>
+		
+</head>
+<body bgcolor="#3399FF">
+
+<div data-role="page">
+
+	<div data-role="header" id="headersection">
+	
+		<h1 style="font-size: 300%; text-align: center;"> My Networks and Hotspots </h1>
+		<br>
+		<br>
+		<center><a href="JavaScript: newPopupwindow('wefesettings.html');">Settings > </a></center>
+		<br>
+	</div>
+	<div role="main" class="ui-content" id="bodysection">
+		<!-- usually should be a javascript code that generates the list based on the add
+			network form -->
+		<center><ul>
+			<li><a href="wefemyphone1.html"> My Phone </a> </li>
+			<li><a href="wefenetwork1.html"> Network 1 </a></li>
+			<li><a href="wefenetwork2.html"> Network 2  </a></li>
+			<li><a href="JavaScript: newPopupwindow('addnetwork.html')"> + Add Network/Hotspot </a></li>
+		</ul></center>
+	</div>
+
+	<div data-role="footer">
+	</div>
+</body>
+</html>

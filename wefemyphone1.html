@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> WE-FE: My Phone </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script>
+	function goBack() {
+		window.history.back()
+	}
+	</script>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bodysection a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: black;
+    background-color: #3399FF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#bodysection a:hover, a:active {
+    background-color: #28597a;
+}
+
+</style>		
+</head>
+
+<body bgcolor="#3399FF">
+	<div data-role="page" align="center">
+		<h1 style="font-size: 300%; "> My Phone </h1>
+		<br>
+		<br>
+		<a href="javascript:history.back()"> < Back</a>
+	</div>
+	<div role="main" class="ui-content" id="bodysection">
+		<center><ul>
+			<li><a href="wefemyphonedevice1.html"> Device 1 </a></li>
+			<li><a href="device2.html"> Device 2 </a></li>
+			<li><a href="device3.html"> Device 3 </a></li>
+	</div>
+	<div data-role="footer">
+	</div>
+</body>
+</html>

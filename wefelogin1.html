@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>WE-FE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+		<!-- // <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script> -->
+		<!-- <script type="text/javascript" src="./javascript/index.js"></script>
+		<script type="text/javascript">
+				function makePassword(){
+				var inputButton = document.createElement("INPUT");
+				$("#makecontainer").append(inputButton);
+			}
+			$(document).ready(function () {
+			
+			});
+		</script> -->
+		<script type="text/javascript">
+			function inputPassword(){
+				var inputButton = document.createElement("INPUT"); 
+				inputButton.setAttribute ("type", "password");
+				inputButton.setAttribute ("id", "passwordinput");
+				inputButton.setAttribute ("size", "4");
+				inputButton.setAttribute ("maxlength","4");
+				$("#makecontainer").append(inputButton);
+				$("#makecontainer").append("<br><br> <button onclick='verifyPassword()'> Login </button>");
+				$("#enterbutton").remove();
+				$("#registerbutton").remove();
+			}
+			$(document).ready(function(){
+
+			});
+		
+		</script>
+		<script type="text/javascript">
+			function verifyPassword(){
+				var passwordInput = document.getElementById("passwordinput")
+				if (passwordInput.value == 3759) {
+					document.location.href='wefenetworks.html'
+				}else{
+					alert("Access denied. Valid Password required.");
+				}
+			}
+		</script>
+<style>
+button {
+   border-top: 1px solid #96d1f8;
+   background: #165782;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#165782));
+   background: -webkit-linear-gradient(top, #3e779d, #165782);
+   background: -moz-linear-gradient(top, #3e779d, #165782);
+   background: -ms-linear-gradient(top, #3e779d, #165782);
+   background: -o-linear-gradient(top, #3e779d, #165782);
+   padding: 5.5px 11px;
+   -webkit-border-radius: 26px;
+   -moz-border-radius: 26px;
+   border-radius: 26px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #fcfcfc;
+   font-size: 13px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+</style>
+</head>
+<body bgcolor="#3399FF">
+
+<div data-role="page">
+
+	<div data-role="header">
+
+		<CENTER><h1 style="font-size: 300%"> WEFE
+    </h1></CENTER>
+	</div><!-- /header -->
+	<center><IMG SRC="wifi 2.jpeg" height="300px" width="300px">
+<div role="main" class="ui-content">
+		<CENTER><p>SEE WHO IS USING YOUR HOTSPOT IN A FEW MOMENTS .</p></center>
+		<button id="enterbutton" onclick="inputPassword()">Enter</button> &nbsp; 
+		&nbsp; <button id="registerbutton" onclick="location.href='../weferegistration1.html'"> Register </button>
+		<div id="makecontainer">
+		</div>
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>© Copyright 2014 </h4>
+		<p><em> by Sole Stewart, Nick Austin, Chris Boyce, & Laureen Chan </p></em>
+	</div><!-- /footer -->
+	<!-- /page -->
+
+</body>
+</html>
