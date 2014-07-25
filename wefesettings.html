@@ -22,7 +22,7 @@
 	</style>
 </head>
 
-<body bgcolor="#3399FF">
+<body >
 
 <div data-role="page">
 	<div data-role="header">
@@ -34,20 +34,23 @@
 	<div role="main" class="ui-content">
 		<!--normally the choices would input a value in a db, seeing value will enable certain scripts on separate
 		    .js linked outside, script link on each page -->
-		<center><ul>
-			<li> Require password for each change
-				<br>
-					<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
-						<option value="off">Off</option>
-						<option value="on">On</option>
-					</select> </li>
-			<li> Send notification of new device 
-				<br>
-					<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
-						<option value="off">Off</option>
-						<option value="on">On</option>
-					</select> </li>
+		<center>
+			<ul>
+				<li> Require password for each change
+					<br>
+						<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select> </li>
+				<li> Send notification of new device 
+					<br>
+						<select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select> </li>
 			</ul>
+			<!-- supposed to save changes and then return to the Networks page -->
+			<button onclick="loadpage('wefenetworks1.html')"> Save & Return </button>
 		</center>
 	</div>
 	<div data-role="footer">

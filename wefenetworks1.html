@@ -22,18 +22,21 @@
 	}
 </style>
 </head>
-<body bgcolor="#3399FF">
+<body>
 
 <div data-role="page">
-	<div role="main" class="ui-content" id="bodysection">
-
 	<div data-role="header" id="headersection" class="ui-title">
 		<h1> My Networks and Hotspots </h1>
 	</div>
 		<!-- usually should be a javascript code that generates the list based on the add
 			network form -->
+	<div data-role="content" class="ui-content" id="bodysection">
 		<center>
 			<div data-role="collapsibleset" data-inset="false">
+				<div style="float:right;"><a href="" onclick="settingspage('wefesettings.html')" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all"></a>
+				</div>
+				<br>
+				<br>
 			    <div data-role="collapsible">
 			        <h3>My Phone</h3>
 			        <ul data-role="listview" data-inset="false">
@@ -60,6 +63,9 @@
 			            <li>Device 3</li>
 			            <li>Device 4</li>
 			        </ul>
+			    </div>
+			    <div >
+			    	<h3><button onclick="settingspage('wefeaddnetwork.html')"> + Add Network </button></h3>
 			    </div>
 			</div>
 		</center>
